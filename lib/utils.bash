@@ -23,16 +23,8 @@ sort_versions() {
 		LC_ALL=C sort -t. -k 1,1 -k 2,2n -k 3,3n -k 4,4n -k 5,5n | awk '{print $2}'
 }
 
-list_github_tags() {
-	git ls-remote --tags --refs "$GH_REPO" |
-		grep -o 'refs/tags/.*' | cut -d/ -f3- |
-		sed 's/^v//' # NOTE: You might want to adapt this sed to remove non-version strings from tags
-}
-
 list_all_versions() {
-	# TODO: Adapt this. By default we simply list the tag names from GitHub releases.
-	# Change this function if racket has other means of determining installable versions.
-	list_github_tags
+	curl -s https://download.racket-lang.org/all-versions.html | grep -E -o 'Version [0-9.]+' | cut -d' ' -f 2 | sort_versions
 }
 
 download_release() {
