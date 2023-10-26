@@ -63,8 +63,8 @@ install_version() {
 
 		cd "$ASDF_DOWNLOAD_PATH"/src
 		xargs ./configure <<<"${ASDF_RACKET_CONFIG_FLAGS}"
-		make
-		make install
+		make -j"${ASDF_CONCURRENCY}"
+		make -j"${ASDF_CONCURRENCY}" install
 
 		local tool_cmd
 		tool_cmd="$(echo "$TOOL_TEST" | cut -d' ' -f1)"
