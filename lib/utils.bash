@@ -2,8 +2,7 @@
 
 set -euo pipefail
 
-# TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for racket.
-GH_REPO="https://github.com/nandalopes/racket"
+GH_REPO="https://github.com/racket/racket"
 TOOL_NAME="racket"
 TOOL_TEST="racket --version"
 
