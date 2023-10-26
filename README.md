@@ -1,12 +1,12 @@
 <div align="center">
 
-# asdf-racket [![Build](https://github.com/nandalopes/asdf-racket/actions/workflows/build.yml/badge.svg)](https://github.com/nandalopes/asdf-racket/actions/workflows/build.yml) [![Lint](https://github.com/nandalopes/asdf-racket/actions/workflows/lint.yml/badge.svg)](https://github.com/nandalopes/asdf-racket/actions/workflows/lint.yml)
+# asdf-racket [![Build](https://github.com/nandalopes/asdf-racket/actions/workflows/build.yml/badge.svg)](https://github.com/nandalopes/asdf-racket/actions/workflows/build.yml) [![Lint](https://github.com/nandalopes/asdf-racket/actions/workflows/lint.yml/badge.svg)](https://github.com/nandalopes/asdf-racket/actions/workflows/lint.yml) <!-- omit from toc -->
 
-[racket](https://github.com/nandalopes/racket) plugin for the [asdf version manager](https://asdf-vm.com).
+[racket](https://racket-lang.org/) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
-# Contents
+# Contents <!-- omit from toc -->
 
 - [Dependencies](#dependencies)
 - [Install](#install)
@@ -18,7 +18,8 @@
 **TODO: adapt this section**
 
 - `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+- `ASDF_RACKET_MINIMAL`: set this environment variable in your shell to install the minimal version of Racket language.
+- `ASDF_RACKET_CONFIG_FLAGS`: set this environment variable in your shell to pass configure flags in installation.
 
 # Install
 
