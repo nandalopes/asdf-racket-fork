@@ -2,7 +2,6 @@
 
 set -euo pipefail
 
-GH_REPO="https://github.com/racket/racket"
 TOOL_NAME="racket"
 TOOL_TEST="racket --version"
 
