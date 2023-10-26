@@ -8,6 +8,8 @@ on:
 
 jobs:
   plugin_test:
+    env:
+      ASDF_RACKET_MINIMAL: true
     name: asdf plugin test
     strategy:
       matrix:
