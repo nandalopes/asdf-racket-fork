@@ -23,7 +23,7 @@
 
 Mostly, you need a C compiler and `make`.
 
-For detailed instructions, see [README.txt in src folder](https://github.com/racket/racket/blob/f81671d6c9776ec970d5af6e39c21d8672e5652f/racket/src/README.txt#L73).
+For detailed instructions, see [`README.txt` in `src` folder](https://github.com/racket/racket/blob/master/racket/src/README.txt#L73).
 
 # Configuration
 
