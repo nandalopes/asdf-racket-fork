@@ -8,4 +8,16 @@ plugin_dir=$(dirname "$(dirname "$current_script_path")")
 # shellcheck source=./lib/utils.bash
 . "${plugin_dir}/lib/utils.bash"
 
-curl -s https://download.racket-lang.org/ | grep -m 1 -E -o 'Version [0-9.]+' | cut -d' ' -f 2
+get_latest_version() {
+	local version query
+	version=$1
+	query='[0-9.]+'
+
+	if [ "$version" ]; then
+		query="${version}[0-9.]*"
+	fi
+
+	curl -s https://download.racket-lang.org/all-versions.html | grep -m 1 -E -o "Version $query" | cut -d' ' -f 2 | tac
+}
+
+get_latest_version "$@"
