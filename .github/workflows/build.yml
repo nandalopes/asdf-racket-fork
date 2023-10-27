@@ -4,7 +4,13 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'bin/*'
+      - 'lib/**/*'
+      - '**/build.yml'
   pull_request:
+    branches-ignore:
+      - 'release-please*'
 
 jobs:
   plugin_test:

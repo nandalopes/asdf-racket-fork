@@ -6,6 +6,9 @@ on:
       - opened
       - edited
       - synchronize
+    branches-ignore:
+      - 'release-please-*'
+      - 'dependabot/*'
 
 jobs:
   semantic-pr:
