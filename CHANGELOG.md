@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.1.0](https://github.com/nandalopes/asdf-racket/compare/v1.0.0...v1.1.0) (2023-10-27)
+
+
+### Features
+
+* Makefile ([41a4f35](https://github.com/nandalopes/asdf-racket/commit/41a4f35614ef98b6d7d524e640870975959e1a07))
+
+
+### Bug Fixes
+
+* latest command ([43a6b5b](https://github.com/nandalopes/asdf-racket/commit/43a6b5badf6fc0bf84ebe23c10197eb3267aa185))
+* tac not found on macos ([8da937e](https://github.com/nandalopes/asdf-racket/commit/8da937e4da56d3a5bbd835aab05740689f98f724))
+
+
+### Performance Improvements
+
+* latest-stable ([6331ace](https://github.com/nandalopes/asdf-racket/commit/6331ace455f0984551223303ad841d55fba24d49))
+* use ASDF_CONCURRENCY with make ([5beb277](https://github.com/nandalopes/asdf-racket/commit/5beb277c73abde1443f2560512b8e696491dcec5))
+* use JOBS env var with make ([92770d9](https://github.com/nandalopes/asdf-racket/commit/92770d959fa21310e0b70d7a210f792292b93fec))
+
 ## 1.0.0 (2023-10-26)
 
 
