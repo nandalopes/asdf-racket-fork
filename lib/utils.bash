@@ -5,6 +5,13 @@ set -euo pipefail
 TOOL_NAME="racket"
 TOOL_TEST="racket --version"
 
+# simulate tac on macOS
+if ! command -v tac &>/dev/null; then
+	tac() {
+		tail -r
+	}
+fi
+
 fail() {
 	echo -e "asdf-$TOOL_NAME: $*"
 	exit 1
