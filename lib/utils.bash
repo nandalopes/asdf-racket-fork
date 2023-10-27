@@ -13,7 +13,7 @@ fail() {
 curl_opts=(-fsSL)
 
 # NOTE: You might want to remove this if racket is not hosted on GitHub releases.
-if [ -n "${GITHUB_API_TOKEN:-}" ]; then
+if [ -n "${GITHUB_API_TOKEN-}" ]; then
 	curl_opts=("${curl_opts[@]}" -H "Authorization: token $GITHUB_API_TOKEN")
 fi
 
@@ -51,7 +51,7 @@ install_version() {
 		fail "asdf-$TOOL_NAME supports release installs only"
 	fi
 
-	ASDF_RACKET_CONFIG_FLAGS="${ASDF_RACKET_CONFIG_FLAGS:-} --prefix ${install_path}"
+	ASDF_RACKET_CONFIG_FLAGS="${ASDF_RACKET_CONFIG_FLAGS-} --prefix ${install_path}"
 
 	if [ "$(uname -s)" == "Darwin" ]; then
 		ASDF_RACKET_CONFIG_FLAGS="${ASDF_RACKET_CONFIG_FLAGS} --enable-macprefix"
